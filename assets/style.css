@@ -1233,3 +1233,625 @@ section {
     display: none;
   }
 }
+/* Additional CSS for Platform Page (Technology) */
+/* Append this to main style.css or include as platform-style.css */
+
+/* Problem Explanation Section */
+.problem-explanation {
+  margin-top: 3rem;
+}
+
+.problem-visual {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.problem-box {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 16px var(--shadow);
+}
+
+.problem-box.bad {
+  border: 3px solid #ff4444;
+}
+
+.problem-box.good {
+  border: 3px solid var(--success);
+}
+
+.problem-box h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.problem-box.bad h3 {
+  color: #ff4444;
+}
+
+.problem-box.good h3 {
+  color: var(--success);
+}
+
+/* Architecture Diagrams */
+.arch-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.arch-layer {
+  background: var(--bg-light);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.arch-layer.single {
+  background: #ffe6e6;
+  border: 2px solid #ff4444;
+}
+
+.arch-layer.split {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  background: #e6f7f0;
+  border: 2px solid var(--success);
+}
+
+.arch-component {
+  padding: 1rem;
+  background: white;
+  border-radius: 6px;
+  border: 2px solid var(--success);
+}
+
+.arch-component strong {
+  display: block;
+  color: var(--success);
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.arch-component p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.arch-separator {
+  font-weight: 700;
+  color: var(--primary);
+  font-size: 0.875rem;
+  text-align: center;
+  padding: 0.5rem;
+  background: white;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.arch-layer.single strong {
+  display: block;
+  color: #ff4444;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+}
+
+.arch-layer.single p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+.arch-result {
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9375rem;
+}
+
+.arch-result.danger {
+  background: #ffe6e6;
+  border: 2px solid #ff4444;
+  color: #cc0000;
+}
+
+.arch-result.success {
+  background: #e6f7f0;
+  border: 2px solid var(--success);
+  color: #006644;
+}
+
+.arch-result strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Problem Text */
+.problem-text {
+  background: var(--bg-light);
+  padding: 2.5rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.problem-text h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.problem-text p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+}
+
+.problem-text p:last-child {
+  margin-bottom: 0;
+}
+
+.problem-text em {
+  font-style: italic;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.problem-text strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* How It Works Section */
+.how-it-works {
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 4rem 0;
+}
+
+.process-flow {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
+}
+
+.step-content {
+  background: white;
+  padding: 1.5rem 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--border);
+  transition: all 0.3s;
+}
+
+.step-content:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 16px var(--shadow);
+  transform: translateX(8px);
+}
+
+.step-content h3 {
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.step-content p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+}
+
+/* Example Box */
+.how-it-works-example {
+  max-width: 1000px;
+  margin: 4rem auto 0;
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  border: 2px solid var(--success);
+}
+
+.how-it-works-example h3 {
+  color: var(--success);
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.example-step {
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+}
+
+.example-step strong {
+  display: block;
+  color: var(--primary);
+  margin-bottom: 1rem;
+  font-size: 1.0625rem;
+}
+
+.example-step p {
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 0.9375rem;
+  margin: 0;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li {
+  padding: 0.5rem 0 0.5rem 1.75rem;
+  position: relative;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.9375rem;
+}
+
+.check-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+/* Capability Cards */
+.capability-card {
+  background: white;
+  border: 2px solid var(--border);
+  transition: all 0.3s;
+}
+
+.capability-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.capability-card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Enterprise Features Section */
+.enterprise-features {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+}
+
+.feature-detail {
+  background: white;
+  border: 2px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  height: 100%;
+}
+
+.feature-detail h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--bg-light);
+}
+
+/* Performance Metrics */
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.perf-metric {
+  background: white;
+  border: 3px solid var(--primary);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.perf-metric:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px var(--shadow-lg);
+  border-color: var(--success);
+}
+
+.metric-value {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.metric-label {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.perf-metric p {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Competitive Moats Section */
+.competitive-moats {
+  margin: 4rem 0;
+}
+
+.moat-card {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  border: 2px solid var(--primary);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.moat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow-lg);
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.moat-card h3 {
+  color: var(--primary);
+  margin-bottom: 1.25rem;
+  font-size: 1.375rem;
+}
+
+.moat-card p {
+  color: var(--text);
+  line-height: 1.8;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Technical Specs Section */
+.technical-specs {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.spec-category {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.spec-category:hover {
+  border-color: var(--primary);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.spec-category h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--bg-light);
+  font-size: 1.25rem;
+}
+
+.spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spec-list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--bg-light);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
+.spec-list li:last-child {
+  border-bottom: none;
+}
+
+.spec-list li strong {
+  color: var(--primary);
+  font-weight: 700;
+  display: inline-block;
+  min-width: 140px;
+}
+
+/* Deployment Options */
+.deployment-options {
+  margin: 4rem 0;
+}
+
+.deployment-card {
+  background: white;
+  border: 2px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.deployment-card:hover {
+  border-color: var(--success);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow-lg);
+}
+
+.deployment-card h3 {
+  color: var(--success);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.deployment-card p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+}
+
+.deployment-card .feature-list {
+  margin-top: auto;
+}
+
+/* Responsive Adjustments for Platform Page */
+@media (max-width: 768px) {
+  .problem-visual {
+    grid-template-columns: 1fr;
+  }
+  
+  .arch-layer.split {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .arch-separator {
+    padding: 0.75rem;
+    font-size: 0.75rem;
+  }
+  
+  .process-step {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .step-content:hover {
+    transform: translateY(-4px);
+  }
+  
+  .example-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .performance-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .metric-value {
+    font-size: 2.5rem;
+  }
+  
+  .specs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .how-it-works,
+  .enterprise-features,
+  .technical-specs {
+    padding: 2.5rem 1.5rem;
+  }
+  
+  .problem-text {
+    padding: 2rem 1.5rem;
+  }
+  
+  .problem-text p {
+    font-size: 1rem;
+  }
+  
+  .how-it-works-example {
+    padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .performance-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles for Platform Page */
+@media print {
+  .arch-diagram,
+  .process-flow,
+  .performance-grid {
+    page-break-inside: avoid;
+  }
+  
+  .problem-box {
+    page-break-inside: avoid;
+    border: 2px solid #333;
+  }
+  
+  .step-content,
+  .spec-category {
+    page-break-inside: avoid;
+  }
+  
+  .metric-value {
+    color: #000;
+  }
+}
