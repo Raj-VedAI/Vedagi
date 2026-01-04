@@ -570,3 +570,299 @@ section {
     gap: 2rem;
   }
 }
+/* Additional CSS for Industries Page */
+/* Append this to the main style.css or include as industries.css */
+
+/* Industry Section Styling */
+.industry-section {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin-bottom: 4rem;
+}
+
+.industry-section.healthcare-section {
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+  border: 2px solid var(--primary);
+}
+
+.industry-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.industry-badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+}
+
+.industry-badge.current {
+  background: var(--success);
+  color: white;
+}
+
+.industry-badge.expansion {
+  background: var(--warning);
+  color: white;
+}
+
+/* Feature Lists */
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feature-list li {
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  position: relative;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.feature-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--success);
+  font-weight: 700;
+}
+
+/* Subsection Titles */
+.subsection-title {
+  font-size: 1.75rem;
+  margin: 3rem 0 1.5rem;
+  color: var(--text);
+  text-align: center;
+}
+
+/* Key Features Grid */
+.key-features {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.feature-item {
+  padding: 1rem;
+  background: var(--bg-light);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.feature-item strong {
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Partner Cards */
+.customer-section {
+  margin-top: 3rem;
+}
+
+.partners {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.partner-card {
+  background: white;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.partner-card h4 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.partner-card p {
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+/* Compliance Badges */
+.compliance-badges {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+
+.compliance-badges strong {
+  color: var(--text);
+  margin-right: 1rem;
+}
+
+/* Platform Advantage Section */
+.platform-advantage {
+  background: white;
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  border: 2px solid var(--primary);
+}
+
+.advantage-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+}
+
+.advantage-card h3 {
+  color: var(--primary);
+}
+
+/* Timeline Styling */
+.expansion-timeline {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 3rem auto 0;
+  padding: 0 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 4px solid var(--primary);
+  border-radius: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.timeline-item.current::before {
+  background: var(--primary);
+  box-shadow: 0 0 0 4px rgba(0, 102, 204, 0.2);
+}
+
+.timeline-year {
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.timeline-content {
+  padding-left: 2rem;
+}
+
+.timeline-content h3 {
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.timeline-content p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+/* Industry Intro Section */
+.industry-intro {
+  margin-bottom: 4rem;
+}
+
+/* Responsive Timeline */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 0;
+  }
+  
+  .timeline-item {
+    grid-template-columns: 1fr;
+    padding-left: 2rem;
+  }
+  
+  .timeline-item::before {
+    left: 0;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-year {
+    text-align: left;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .timeline-content {
+    padding-left: 0;
+  }
+  
+  .industry-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Print Styles for Industry Page */
+@media print {
+  .industry-badge {
+    border: 2px solid #333;
+    background: white !important;
+    color: #333 !important;
+  }
+  
+  .timeline::before {
+    background: #333;
+  }
+  
+  .feature-list li::before {
+    color: #333;
+  }
+}
