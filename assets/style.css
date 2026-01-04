@@ -866,3 +866,370 @@ section {
     color: #333;
   }
 }
+/* Additional CSS for About Page (Mission) */
+/* Append this to main style.css or include as about-style.css */
+
+/* Problem Statement */
+.problem-statement {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: var(--bg-light);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary);
+}
+
+.problem-statement p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.problem-statement p:last-child {
+  margin-bottom: 0;
+}
+
+.problem-statement strong {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Our Solution Section */
+.our-solution {
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+  margin: 4rem 0;
+}
+
+.solution-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.solution-intro {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: var(--text);
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-weight: 500;
+}
+
+/* Vision Statement */
+.vision-statement {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem;
+  background: white;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.vision-statement p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.vision-statement p:last-child {
+  margin-bottom: 0;
+}
+
+.vision-statement strong {
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+/* Story Cards */
+.story-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+  border-color: var(--primary);
+}
+
+.story-card h3 {
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.story-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.story-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Company Principles Section */
+.company-principles {
+  background: var(--bg-light);
+  padding: 4rem 2rem;
+  border-radius: 16px;
+}
+
+.principle-card {
+  background: white;
+  border: 1px solid var(--border);
+  padding: 2rem;
+  border-radius: 12px;
+  transition: all 0.3s;
+  height: 100%;
+}
+
+.principle-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+  border-color: var(--success);
+}
+
+.principle-card h3 {
+  color: var(--success);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.principle-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Leadership Section */
+.leadership-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.leader-card {
+  background: white;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  padding: 3rem;
+  margin-bottom: 3rem;
+}
+
+.leader-info h3 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.leader-title {
+  font-size: 1.125rem;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.leader-bio {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.leader-contact {
+  font-size: 0.9375rem;
+  color: var(--text-light);
+  margin-bottom: 0;
+}
+
+.leader-contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.leader-contact a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.team-note {
+  background: var(--bg-light);
+  padding: 2rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--secondary);
+}
+
+.team-note p {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.team-note p:last-child {
+  margin-bottom: 0;
+}
+
+.team-note strong {
+  color: var(--text);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.team-note a {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.team-note a:hover {
+  text-decoration: underline;
+}
+
+/* Milestone Cards */
+.timeline-simple {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.milestone-card {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.milestone-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.milestone-card h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--bg-light);
+}
+
+.milestone-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 0;
+  font-size: 0.9375rem;
+}
+
+/* Join Section */
+.join-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.join-card {
+  background: white;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.join-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px var(--shadow-lg);
+}
+
+.join-card h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.join-card p {
+  color: var(--text-light);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.join-card .btn {
+  margin-top: auto;
+}
+
+/* Responsive Adjustments for About Page */
+@media (max-width: 768px) {
+  .problem-statement,
+  .vision-statement {
+    padding: 2rem 1.5rem;
+  }
+  
+  .problem-statement p,
+  .vision-statement p {
+    font-size: 1rem;
+  }
+  
+  .solution-intro {
+    font-size: 1.125rem;
+  }
+  
+  .leader-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .leader-info h3 {
+    font-size: 1.5rem;
+  }
+  
+  .timeline-simple {
+    grid-template-columns: 1fr;
+  }
+  
+  .join-section {
+    grid-template-columns: 1fr;
+  }
+  
+  .our-solution,
+  .company-principles {
+    padding: 2.5rem 1.5rem;
+  }
+}
+
+/* Print Styles for About Page */
+@media print {
+  .problem-statement,
+  .vision-statement {
+    border: 2px solid #333;
+    page-break-inside: avoid;
+  }
+  
+  .leader-card,
+  .milestone-card,
+  .join-card {
+    border: 1px solid #333;
+    page-break-inside: avoid;
+  }
+  
+  .btn {
+    display: none;
+  }
+}
