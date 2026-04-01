@@ -2181,6 +2181,30 @@ section {
    Bioluminescent green accent theme
    ============================================================ */
 
+/* Nav ClarityOps accent */
+.nav a.clarity-link {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+.nav a.clarity-link:hover {
+  color: var(--primary);
+}
+.nav a.clarity-link.active::after {
+  background: var(--primary);
+}
+
+/* Bridging paragraph between Technology Portfolio cards */
+.section-bridge {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.05rem;
+  color: var(--text-light);
+  font-style: italic;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Nav MycelAI accent */
 .nav a.mycelai-link {
   color: var(--mycel-dark);
