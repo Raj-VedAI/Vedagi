@@ -1,5 +1,5 @@
 /* VedAGI Enterprise Website Styles */
-/* Updated for Strategic AI Advisor positioning */
+/* Updated for Strategic AI Advisor positioning + MycelAI bio-computing */
 
 :root {
   --primary: #0066cc;
@@ -14,6 +14,14 @@
   --warning: #ff9500;
   --shadow: rgba(0, 0, 0, 0.1);
   --shadow-lg: rgba(0, 0, 0, 0.15);
+
+  /* MycelAI bioluminescent palette */
+  --mycel-green: #00c96e;
+  --mycel-dark: #007a42;
+  --mycel-deeper: #004d29;
+  --mycel-glow: rgba(0, 201, 110, 0.18);
+  --mycel-bg: #f0fff8;
+  --mycel-border: rgba(0, 201, 110, 0.35);
 }
 
 * {
@@ -2165,5 +2173,451 @@ section {
     content: " (" attr(href) ")";
     font-size: 0.75rem;
     color: #666;
+  }
+}
+
+/* ============================================================
+   MycelAI Bio-Computing Styles
+   Bioluminescent green accent theme
+   ============================================================ */
+
+/* Nav MycelAI accent */
+.nav a.mycelai-link {
+  color: var(--mycel-dark);
+  font-weight: 600;
+}
+.nav a.mycelai-link:hover {
+  color: var(--mycel-green);
+}
+.nav a.mycelai-link.active::after {
+  background: var(--mycel-green);
+}
+
+/* Hero — deep-tech split */
+.hero-deeptech {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #0a1628 0%, #0d1f3c 55%, #051a0f 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-deeptech::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 50% at 70% 50%, var(--mycel-glow), transparent 70%),
+              radial-gradient(ellipse 40% 60% at 20% 40%, rgba(0, 102, 204, 0.15), transparent 70%);
+  pointer-events: none;
+}
+
+.hero-deeptech h1 {
+  color: white;
+  font-size: 3.25rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.hero-deeptech .lead {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  max-width: 640px;
+}
+
+.hero-badge-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-badge.enterprise {
+  background: rgba(0, 102, 204, 0.25);
+  color: #7ab8f5;
+  border: 1px solid rgba(0, 102, 204, 0.4);
+}
+
+.hero-badge.biotech {
+  background: var(--mycel-glow);
+  color: #5debb4;
+  border: 1px solid var(--mycel-border);
+}
+
+.hero-cta-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.btn.mycel {
+  background: var(--mycel-green);
+  color: #001f10;
+  font-weight: 700;
+}
+.btn.mycel:hover {
+  background: var(--mycel-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(0, 201, 110, 0.4);
+}
+
+.btn.outline-white {
+  background: transparent;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.45);
+}
+.btn.outline-white:hover {
+  border-color: white;
+  background: rgba(255,255,255,0.08);
+}
+
+.hero-visual-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.product-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 1.5rem 2rem;
+  backdrop-filter: blur(8px);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.product-pill:hover {
+  box-shadow: 0 0 32px rgba(255, 255, 255, 0.08);
+}
+
+.product-pill.clarity {
+  border-left: 4px solid var(--primary);
+}
+
+.product-pill.mycel {
+  border-left: 4px solid var(--mycel-green);
+}
+
+.product-pill .pill-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.4rem;
+}
+
+.product-pill.clarity .pill-label { color: #7ab8f5; }
+.product-pill.mycel .pill-label   { color: #5debb4; }
+
+.product-pill h3 {
+  color: white;
+  font-size: 1.1rem;
+  margin-bottom: 0.35rem;
+}
+
+.product-pill p {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* MycelAI themed section */
+.mycelai-section {
+  background: var(--mycel-bg);
+  border: 1px solid var(--mycel-border);
+  border-radius: 20px;
+  padding: 4rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.mycelai-section::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(0, 201, 110, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.mycelai-section .section-title {
+  color: var(--mycel-darker, var(--mycel-dark));
+}
+
+.mycelai-badge {
+  display: inline-block;
+  padding: 0.4rem 1.25rem;
+  background: var(--mycel-green);
+  color: #001f10;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 1.5rem;
+}
+
+.mycelai-tagline {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  max-width: 780px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  line-height: 1.7;
+}
+
+/* MycelAI cards */
+.card.mycel-card {
+  border-color: var(--mycel-border);
+  background: white;
+}
+
+.card.mycel-card:hover {
+  border-color: var(--mycel-green);
+  box-shadow: 0 8px 28px rgba(0, 201, 110, 0.15);
+  transform: translateY(-4px);
+}
+
+.card.mycel-card h3 {
+  color: var(--mycel-dark);
+}
+
+.card.mycel-highlight {
+  background: linear-gradient(135deg, var(--mycel-dark) 0%, var(--mycel-deeper) 100%);
+  color: white;
+  border: none;
+}
+
+.card.mycel-highlight h3 {
+  color: #5debb4;
+}
+
+.card.mycel-highlight p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Science reference callout */
+.science-ref {
+  background: white;
+  border: 1px solid var(--mycel-border);
+  border-left: 4px solid var(--mycel-green);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  line-height: 1.7;
+}
+
+.science-ref cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--mycel-dark);
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* Dual-use applications */
+.dual-use-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.dual-use-card {
+  background: white;
+  border: 1px solid var(--mycel-border);
+  border-radius: 14px;
+  padding: 2rem;
+  transition: all 0.3s;
+}
+
+.dual-use-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 201, 110, 0.12);
+}
+
+.dual-use-card .app-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.dual-use-card h3 {
+  color: var(--mycel-dark);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+}
+
+.dual-use-card p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Feature pills for MycelAI specs */
+.spec-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.spec-pill {
+  padding: 0.5rem 1.1rem;
+  border: 1.5px solid var(--mycel-border);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--mycel-dark);
+  background: white;
+  white-space: nowrap;
+}
+
+/* Status badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.25rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.status-badge::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 6px currentColor;
+}
+
+.status-badge.prototype {
+  background: rgba(0, 201, 110, 0.12);
+  color: var(--mycel-dark);
+  border: 1px solid var(--mycel-border);
+}
+
+/* Technology Portfolio / Dual section */
+.tech-portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  .tech-portfolio {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-card {
+  border-radius: 16px;
+  padding: 2.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-card.enterprise-card {
+  background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+  border: 2px solid rgba(0, 102, 204, 0.25);
+}
+
+.portfolio-card.enterprise-card h3 { color: var(--primary); }
+
+.portfolio-card.biotech-card {
+  background: linear-gradient(135deg, var(--mycel-bg) 0%, #ffffff 100%);
+  border: 2px solid var(--mycel-border);
+}
+
+.portfolio-card.biotech-card h3 { color: var(--mycel-dark); }
+
+.portfolio-card .portfolio-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.enterprise-card .portfolio-label { color: var(--primary); }
+.biotech-card .portfolio-label    { color: var(--mycel-green); }
+
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.portfolio-card p {
+  color: var(--text-light);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.portfolio-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-card ul li {
+  padding: 0.4rem 0 0.4rem 1.5rem;
+  position: relative;
+  color: var(--text-light);
+  font-size: 0.95rem;
+}
+
+.enterprise-card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.biotech-card ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--mycel-green);
+  font-weight: 700;
+}
+
+/* Responsive hero-deeptech */
+@media (max-width: 768px) {
+  .hero-deeptech {
+    padding: 3.5rem 0;
+  }
+  .hero-deeptech h1 {
+    font-size: 2.1rem;
+  }
+  .mycelai-section {
+    padding: 2.5rem 1.5rem;
   }
 }
